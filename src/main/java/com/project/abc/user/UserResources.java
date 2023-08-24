@@ -67,4 +67,9 @@ public class UserResources {
             return ResponseEntity.ok().body(user);
         }
     }
+    
+    @RequestMapping(value = "/allusers", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public Map<String, Object> retrieveAllUsers() throws Exception {
+    	return userService.retrieveAllUsers();
+    }
 }

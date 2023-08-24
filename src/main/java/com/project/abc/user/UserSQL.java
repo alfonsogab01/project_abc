@@ -9,6 +9,9 @@ public class UserSQL {
             " ORDER BY %s %s " +
             " LIMIT ?, ?";
     
+    public static final String RETRIEVE_ALL_USERS =
+            "SELECT userFirstName FROM `user` ";
+    
     public static final String RETRIEVE_FILTERED_USER_COUNT =
             "SELECT count(userId) " +
             "  FROM `user` " +

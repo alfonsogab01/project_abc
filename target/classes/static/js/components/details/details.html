@@ -1,0 +1,31 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="$dismiss()">&times;</button>
+        <h3 class="modal-title">Message Details</h3></div>
+    <div class="modal-body">
+        <div>
+	        <label><strong>Message from:</strong></label>
+			<pre>{{vmDetails.message.sender}}</pre>
+        </div>
+        <div>
+	        <label><strong>Message to:</strong></label>
+			<pre>{{vmDetails.message.recipient}}</pre>
+        </div>
+        <div>
+	        <label><strong>Message body:</strong></label>
+			<pre style="height:100px;"><div>{{vmDetails.message.body}}</div></pre>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="form-group">
+            <div class="col-lg-offset-3">
+                <button type="reset" class="btn btn-default btn-half" ng-click="vmDetails.closeModal()"><i
+                        class="fa fa-ban" aria-hidden="true"></i> Cancel
+                </button>
+                <button type="submit" class="btn btn-primary btn-half" ui-sref="dashboard.messagesnew" ng-click="vmDetails.closeModal()"><i class="fa fa-reply" aria-hidden="true"></i>
+                    Reply
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

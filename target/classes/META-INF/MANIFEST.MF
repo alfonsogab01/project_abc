@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: SIS
+Implementation-Version: v.0.0.1
+Built-By: user
+Implementation-Vendor-Id: com.project
+Build-Jdk: 1.8.0_181
+Implementation-URL: http://projects.spring.io/spring-boot/SIS/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

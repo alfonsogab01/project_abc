@@ -23,4 +23,14 @@ public class Messages {
         public static final String FAIL_PASSWORD_SIZE = "Password should be atleast 10 characters.";
         public static final String FAIL_USER_NOT_EXIST = "User does not exist";
     }
+    public class Message {
+        public static final String SUCCESS_NEW_ENTRY = "Message sent!";
+        public static final String FAIL_BODY_REQUIRED = "Message Body is required";
+        public static final String FAIL_UPDATE_ENTRY = "Unable to delete message";
+        public static final String FAIL_NEW_ENTRY = "Unable to send message";
+        public static final String SUCCESS_DELETE_ENTRY = "Message was successfully deleted.";
+        public static final String FAIL_RECIPIENT_REQUIRED = "Recipient is required.";
+        public static final String SUCCESS_UPDATE_ENTRY = "Message info was successfully updated.";
+        public static final String FAIL_MESSAGE_NOT_EXIST = "Message does not exist";
+    }
 }

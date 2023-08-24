@@ -43,6 +43,17 @@ public class UserService {
 		return user;
 	}
 
+	public Map<String, Object> retrieveAllUsers() {
+		Map<String, Object> users = new HashMap<>();
+		try {
+			users = userDAO.retrieveAllUsers();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return users;
+	}
+
 	public boolean addNewUser(User user) {
 		success = false;
 		try {

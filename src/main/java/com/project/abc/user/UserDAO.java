@@ -66,6 +66,19 @@ public class UserDAO extends JdbcDaoSupport {
 			throw e;
 		}
 	}
+	
+	public Map<String, Object> retrieveAllUsers() throws Exception {
+		try {
+			String sql = UserSQL.RETRIEVE_ALL_USERS;
+			List<User> users = jdbcTemplate.query(sql, new BeanPropertyRowMapper<User>(User.class));
+			
+			Map<String, Object> result = new HashMap<>();
+			result.put("Sites", users);
+			return result;
+		} catch (Exception e) {
+			throw e;
+		}
+	}
 
 	public boolean addNewUser(User user) throws Exception {
 		boolean isSuccess = false;
